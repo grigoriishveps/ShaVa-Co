@@ -1,0 +1,52 @@
+.bg-blue{
+    background: #466DD1;
+}
+
+.font-white{
+    color: white !important;
+}
+
+.burger-image{
+    padding-top: 7px;
+}
+
+.btn-for-img{
+    outline: none;
+    background: inherit;
+}
+
+.logo-img{
+    /*margin-top: 3px;*/
+}
+
+.search-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.nav-search-input{
+    border-radius: 0 18px 18px 0 !important;
+    color: white !important;
+    background: #597CD6 !important;
+    border: 0 !important;
+}
+
+.nav-search-icon{
+    background: #597CD6 !important;
+    color: white !important;
+    border-radius: 18px 0 0 18px !important;
+    border: 0 !important;
+
+}
+
+.nav-search-div{
+    background: #597CD6;
+
+    border: 0 !important;
+}
+
+.right-avatar-box{
+    width: 200px;
+    background: #B80058;
+}
+

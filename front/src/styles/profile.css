@@ -1,0 +1,81 @@
+.profile-note-text{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+
+    color: #656870;
+
+}
+
+.profile-info-block{
+    margin-bottom: 50px;
+}
+.profile-info-block h6{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.profile-person-left{
+    min-width: 160px;
+    width: 160px;
+    max-width: 160px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+.profile-info-text{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 10px !important;
+}
+
+
+.profile-switch{
+    width: 48px;
+    height: 24px;
+}
+
+.table thead{
+    border-top: 0 !important;
+    font-family: Inter ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    text-align: center;
+}
+
+.profile-table{
+    width: 1000px;
+}
+.table {
+    text-align: center;
+}
+
+.table tbody tr td:first-child{
+    text-align: left;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.profile-new-text{
+    color: #FF70B4;
+
+}

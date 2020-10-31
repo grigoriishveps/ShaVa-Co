@@ -1,0 +1,33 @@
+.book-container{
+    width: 185px;
+    max-width: 185px;
+    margin-right: 15px;
+    margin-bottom: 50px;
+}
+
+.book-title{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.book-writer{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    color: #466DD1;
+}
+
+.book-writer:hover{
+    color: #B80058;
+    text-decoration: none;
+}
+
+.book-img-box{
+    border: 1px solid #B6B6B6;
+}
