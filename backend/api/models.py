@@ -6,7 +6,7 @@ class Reader(models.Model):
     class Meta:
         app_label = "api"
 
-    id_reader = models.IntegerField(verbose_name='id_reader', db_index=True, primary_key=True)
+    reader_id = models.IntegerField(verbose_name='reader_id', db_index=True, primary_key=True)
     birth_day = models.DateField(verbose_name='birth_day')
 
 
