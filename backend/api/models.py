@@ -15,15 +15,15 @@ class Catalog(models.Model):
         app_label = "api"
 
     catalog_id = models.IntegerField(verbose_name='catalog_id', db_index=True, primary_key=True)
-    author = models.CharField(verbose_name='author', max_length=256, null=True)
-    name = models.CharField(verbose_name='name', max_length=256, null=True)
-    city = models.CharField(verbose_name='city', max_length=256,  null=True)
-    publisher = models.CharField(verbose_name='publisher', max_length=256, null=True)
-    pub_date = models.IntegerField(verbose_name='pub_date', null=True)
-    series = models.CharField(verbose_name='series', max_length=256, null=True)
-    categories = models.CharField(verbose_name='categories', max_length=256, null=True)
-    lib_cat = models.CharField(verbose_name='lib_cat', max_length=256, null=True)
-    age_qul = models.IntegerField(verbose_name='age_qul', null=True)
+    author = models.CharField(verbose_name='author', max_length=512, null=True)
+    name = models.CharField(verbose_name='name', max_length=512, null=True)
+    city = models.CharField(verbose_name='city', max_length=512,  null=True)
+    publisher = models.CharField(verbose_name='publisher', max_length=512, null=True)
+    pub_date = models.CharField(verbose_name='pub_date', max_length=512, null=True)
+    series = models.CharField(verbose_name='series', max_length=512, null=True)
+    categories = models.CharField(verbose_name='categories', max_length=512, null=True)
+    lib_cat = models.CharField(verbose_name='lib_cat', max_length=512, null=True)
+    age_qul = models.CharField(verbose_name='age_qul', max_length=512, null=True)
 
 
 class Issue(models.Model):
