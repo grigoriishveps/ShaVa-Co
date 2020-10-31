@@ -1,13 +1,18 @@
+from django.contrib.auth import get_user_model
 from django.db import models
 
 
-# Create your models here.
+User = get_user_model()
+
+
+
 class Reader(models.Model):
     class Meta:
         app_label = "api"
 
     reader_id = models.IntegerField(verbose_name='reader_id', db_index=True, primary_key=True)
     birth_day = models.DateField(verbose_name='birth_day')
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
 
 
 class Catalog(models.Model):
@@ -35,4 +40,4 @@ class Issue(models.Model):
     catalog_id = models.ForeignKey(Catalog, verbose_name='catalog', on_delete=models.CASCADE, null=True)
     start_date = models.DateField(verbose_name='start_date', null=True)
     end_date = models.DateField(verbose_name='end_date', null=True)
-    status = models.IntegerField(verbose_name='status', null=True)
+
