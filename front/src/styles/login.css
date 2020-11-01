@@ -1,0 +1,97 @@
+.login-wrapper{
+    min-height: 100vh;
+    padding: 240px 0 0 160px;
+    background-image: url(../imgs/background.png);
+    background-size: 100%;
+}
+
+.login-box{
+    width: 560px;
+    height: 484px;
+
+    background: #FFFFFF;
+    border-radius: 19px;
+    padding: 60px 100px 0 100px;
+}
+
+.login-box input[type='text']{
+    width: 360px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #B6B6B6;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding:  8px 14px;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+.login-box h5{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 11px;
+}
+.login-box h6{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-35{
+    margin-bottom: 35px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+
+.login-button-sign-in{
+    width: 140px;
+    height: 40px;
+    background: #FF70B4;
+    border-radius: 4px;
+    color: white;
+    border: 0;
+}
+
+.login-button-sign-up{
+    width: 194px;
+    height: 40px;
+    background: #F7F7FF;
+    border-radius: 4px;
+    color: #466DD1;
+    border: 0;
+}
+
+.login-link{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: right;
+    color: #466DD1;
+}
+
+.login-label{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #656870;
+}
+.login-checkbox{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #B6B6B6;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-right: 10px !important;
+}

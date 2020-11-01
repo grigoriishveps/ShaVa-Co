@@ -4,6 +4,14 @@ import {Link} from "react-router-dom";
 import {Component} from "react";
 import Book from "./Book";
 export default class EventBox extends Component {
+    constructor(props){
+        super(props);
+
+        this.state={
+            events:{}
+        }
+    }
+
     render() {
         return (
             <div className="text-left">
@@ -47,9 +55,14 @@ export default class EventBox extends Component {
                 </div>
 
                 <div className="d-flex d-row justify-content-start">
-                    <Event />
-                    <Event />
-                    <Event />
+                    {/*{this.state.events.map((item, index)=>{*/}
+                    {/*    const event={*/}
+                    {/*        title: item['Название мероприятия'],*/}
+                    {/*        address: item['Место проведения'],*/}
+                    {/*    }*/}
+                    {/*    return <Event event={event} />*/}
+                    {/*})}*/}
+                    <Event event={{}}/>
                 </div>
             </div>
         );

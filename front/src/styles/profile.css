@@ -77,5 +77,64 @@
 
 .profile-new-text{
     color: #FF70B4;
+}
 
+.profile-item{
+    padding: 4px 11px 4px 12px;
+    background: #E1E8F9;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.profile-item span{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 11px;
+}
+
+.profile-text-button{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    background: inherit;
+    outline: none;
+    border:0;
+    color: #007bff;
+    padding-left: 0px;
+}
+.profile-text-button:focus{
+    outline: none;
+}
+.profile-text-button:hover{
+    color: #B80058;
+    text-decoration: none;
+}
+
+.profile-input{
+    width: 360px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #B6B6B6;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding:  8px 14px;
+    outline: none;
+    margin-right: 10px;
+}
+.profile-close-button{
+    width:8px;
+    height: 8px;
+    outline:none;
+    border: 0;
+    background: inherit;
+    padding-bottom: 6px;
+}
+.profile-close-button:focus{
+    outline: none;
 }

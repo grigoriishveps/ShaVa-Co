@@ -5,6 +5,7 @@ import burgerImg from '../imgs/burger.svg';
 import avatarImg from '../imgs/Avatar.svg';
 import searchImg from  '../imgs/search.svg'
 import {Button} from "reactstrap";
+import {Link} from "react-router-dom";
 
 export default class NavMenu extends Component {
 
@@ -16,7 +17,7 @@ export default class NavMenu extends Component {
         return (
             <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-blue text-white align-items-center align-content-center">
 
-                <img src={logoImg} className="logo-img"/>
+                <Link to={'/'}><img src={logoImg} className="logo-img"/></Link>
                 {/*<button className="btn-outline- " type="button">*/}
                 {/*    <img src={burgerImg} className="burger-image" />*/}
                 {/*</button>*/}
@@ -59,9 +60,11 @@ export default class NavMenu extends Component {
                     <input type="text" className="form-control nav-search-input" aria-label="Username" aria-describedby="basic-addon1" />
                 </div>
 
-                <div>
-
+                <div className="right-avatar-box ">
+                    <Link to={'/profile'}><img src={avatarImg} className="logo-img mr-2"/></Link>
+                    Подобрано для вас, Константин
                 </div>
+
             </nav>
         );
     }

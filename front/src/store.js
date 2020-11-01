@@ -3,18 +3,11 @@ import {combineReducers, createStore, applyMiddleware, compose} from 'redux';
 
 import thunk from 'redux-thunk'
 import {whoami} from "./actions/app";
+import appReducer from "./reducers/appReducer";
 
 const reducer = combineReducers({
-  //form: reduxFormReducer, // mounted under "form",
-  // app: appReducer,
-  // users: usersReducer,
-  // vehicles: vehiclesReducer,
-  // driverSurvey: driverReducer,
-  // depots: depotsReducer,
-  // company: companyReducer,
-  // tasks: tasksReducer,
-  // infringements: infringementsReducer,
-  // defects: defectsReducer,
+
+   app: appReducer,
 });
 
 const composeEnhancers =
