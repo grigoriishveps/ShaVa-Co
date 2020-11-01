@@ -19,7 +19,7 @@ settings.configure(DATABASES={
 django.setup()
 import csv
 
-from backend.api.models import Reader, Catalog, Issue
+from api.models import Reader, Catalog, Issue
 
 # with open('reader.csv', newline='') as csvfile:
 #    spamreader = csv.reader(csvfile, delimiter=';', quotechar='|')
@@ -50,23 +50,24 @@ from backend.api.models import Reader, Catalog, Issue
 #        # print(row)
 
 
-with open('merged_issue.csv', newline='', encoding='utf-8') as csvfile:
-    spamreader = csv.reader(csvfile, delimiter=';', quotechar='"')
-    print(spamreader)
-    for row in tqdm(spamreader):
-        # print(a)
-        #a = row[2].split('-')
-        ##print(a)
-        #if len(a[0]) < 4:
-        #    b= a[2]+'-'+a[1]+'-'+a[0]
-        #else:
-        #    b = a[0] + '-' + a[1] + '-' + a[2]
-        #c = row[3].split('-')
-        #if len(c[0]) < 4:
-        #    d = c[2] + '-' + c[1] + '-' + c[0]
-        #else:
-        #    d = c[0] + '-' + c[1] + '-' + c[2]
-        try:
-            Issue.objects.create(issue_id=row[0], reader_id=Reader.objects.get(reader_id=row[1]), catalog_id=Catalog.objects.get(catalog_id=row[4]))
-        except:
-            pass
+#with open('merged_issue.csv', newline='', encoding='utf-8') as csvfile:
+#    spamreader = csv.reader(csvfile, delimiter=';', quotechar='"')
+#    print(spamreader)
+#    for row in tqdm(spamreader):
+#        # print(a)
+#        #a = row[2].split('-')
+#        ##print(a)
+#        #if len(a[0]) < 4:
+#        #    b= a[2]+'-'+a[1]+'-'+a[0]
+#        #else:
+#        #    b = a[0] + '-' + a[1] + '-' + a[2]
+#        #c = row[3].split('-')
+#        #if len(c[0]) < 4:
+#        #    d = c[2] + '-' + c[1] + '-' + c[0]
+#        #else:
+#        #    d = c[0] + '-' + c[1] + '-' + c[2]
+#        try:
+#            Issue.objects.create(issue_id=row[0], reader_id=Reader.objects.get(reader_id=row[1]), catalog_id=Catalog.objects.get(catalog_id=row[4]))
+#        except:
+#            pass
+print(Issue.objects.get(reader_id=Reader.objects.filter(reader_id=7317)))

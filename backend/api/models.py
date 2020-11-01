@@ -2,9 +2,24 @@ from django.contrib.auth import get_user_model
 from django.db import models
 
 
-User = get_user_model()
+class Catalog(object):
+    pass
 
 
+class Events(object):
+    pass
+
+
+class User(get_user_model()):
+
+    oda = models.IntegerField(verbose_name='oda', null=True)
+    hearing = models.IntegerField(verbose_name='hearing', null=True)
+    vision = models.IntegerField(verbose_name='vision', null=True)
+    wheelchair = models.IntegerField(verbose_name='wheelchair', null=True)
+    interes = models.CharField(verbose_name='interes', max_length=1024, null=True)
+    #recbooks = models.ManyToManyField(Catalog)
+    #recivents = models.ManyToManyField(Events)
+    
 
 class Reader(models.Model):
     class Meta:
@@ -12,7 +27,7 @@ class Reader(models.Model):
 
     reader_id = models.IntegerField(verbose_name='reader_id', db_index=True, primary_key=True)
     birth_day = models.DateField(verbose_name='birth_day')
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+    user_id = models.OneToOneField(User, on_delete=models.CASCADE, null=True)
 
 
 class Catalog(models.Model):

@@ -16,4 +16,5 @@ class RetrieveUpdateDestroyBookView(generics.RetrieveUpdateDestroyAPIView):
         pk = self.kwargs.get('pk')
         object = Catalog.objects.get(catalog_id=kwargs['pk'])
         serializer = BookDetailSerializer(object)
+        print(serializer.data)
         return Response(serializer.data)
